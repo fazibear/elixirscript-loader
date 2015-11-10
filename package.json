@@ -1,13 +1,13 @@
 {
   "name": "elixirscript-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Michał Kalbarczyk",
   "description": "elixirscript loader module for webpack",
   "dependencies": {
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:webpack/coffee-loader.git"
+    "url": "git@github.com:fazibear/elixirscript-loader"
   },
   "licenses": [
     {
