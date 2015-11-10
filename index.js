@@ -4,6 +4,11 @@ var exec = require('child_process').exec;
 module.exports = function(source) {
   var callback = this.async();
   exec("ex2js '" + source + "' -ex -r elixirscript", function (error, stdout, stderr) {
-    callback(null, stdout);
+    if(error || stderr){
+      callback(error || stderr, null);
+    }
+    if(stdout){
+      callback(null, stdout);
+    }
   });
 };
