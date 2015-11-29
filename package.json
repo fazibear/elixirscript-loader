@@ -1,6 +1,6 @@
 {
   "name": "elixirscript-loader",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Michał Kalbarczyk",
   "description": "elixirscript loader module for webpack",
   "dependencies": {
@@ -14,5 +14,8 @@
       "type": "MIT",
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
-  ]
+  ],
+  "dependencies": {
+    "elixirscript": "*"
+  }
 }
