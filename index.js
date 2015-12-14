@@ -8,7 +8,6 @@ module.exports = function(source) {
       callback(error || stderr, null);
     }
     if(stdout){
-      console.log(stdout);
       callback(null, stdout);
     }
   });
