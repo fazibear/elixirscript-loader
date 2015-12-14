@@ -1,5 +1,9 @@
 # elixirscript webpack loader
 
+## Requirements
+
+- Erlang installed
+
 ## Usage
 
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
@@ -10,8 +14,8 @@
 {
   module: {
     loaders: [
-      { test: /\.exjs$/, loader: "babel?presets[]=es2015!elixirscript" },
-      { test: /\.js$/, loader: "babel?presets[]=es2015" }
+      { test: /\.exjs$/, exclude: /(noode_modules|bower_components)/, loader: "babel?presets[]=es2015!elixirscript" },
+      { test: /\.js$/,   exclude: /(noode_modules|bower_components)/, loader: "babel?presets[]=es2015" }
     ]
   }
 }
