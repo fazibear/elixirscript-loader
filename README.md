@@ -14,8 +14,8 @@
 {
   module: {
     loaders: [
-      { test: /\.exjs$/, exclude: /(noode_modules|bower_components)/, loader: "babel?presets[]=es2015!elixirscript" },
-      { test: /\.js$/,   exclude: /(noode_modules|bower_components)/, loader: "babel?presets[]=es2015" }
+      { test: /\.exjs$/, exclude: /(node_modules|bower_components)/, loader: "babel?presets[]=es2015!elixirscript" },
+      { test: /\.js$/,   exclude: /(node_modules|bower_components)/, loader: "babel?presets[]=es2015" }
     ]
   }
 }
