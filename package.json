@@ -1,6 +1,6 @@
 {
   "name": "elixirscript-loader",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Michał Kalbarczyk",
   "description": "elixirscript loader module for webpack",
   "dependencies": {
@@ -16,6 +16,6 @@
     }
   ],
   "dependencies": {
-    "elixirscript": "*"
+    "elixirscript": "^0.22.0"
   }
 }
