@@ -7,7 +7,7 @@ module.exports = function(source) {
     if(error || stderr){
       callback(error || stderr, null);
     }
-    if(stdout){
+    else if(stdout){
       callback(null, stdout);
     }
   });
