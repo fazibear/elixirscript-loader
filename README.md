@@ -13,12 +13,34 @@
 ``` javascript
 {
   module: {
-    loaders: [
-      { test: /\.exjs$/, exclude: /(noode_modules|bower_components)/, loader: "babel?presets[]=es2015!elixirscript" },
-      { test: /\.js$/,   exclude: /(noode_modules|bower_components)/, loader: "babel?presets[]=es2015" }
+    rules: [
+      {
+        test: /\.ex$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: "elixirscript-loader",
+        options: {
+          inputFolder: "./app/elixirscript",
+          jsModules: [
+            ["React", "react"], 
+            ["ReactDOM", "react-dom"]
+          ]
+        }
+      }
     ]
   }
 }
+```
+
+### Options
+
+* `inputFolder`: (required) The path to your elixirscript files
+* `jsModules`: (optional) A list of JavaScript modules used
+
+### Code
+
+```js
+import Elixir from "path/to/elixirscript/entry/path/app.ex";
+Elixir.start(Elixir.App, []);
 ```
 
 ## License
