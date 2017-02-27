@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Erlang installed
+- Elixirscript installed
 
 ## Usage
 
